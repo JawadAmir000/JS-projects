@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CRUD PROJECT WITH DESIGN</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management System</h1>
+      <button class="btn-cont">Create New</button>
+
+      <table class="list" id="storeList">
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>User Name</td>
+          <td>E-mail</td>
+          <!-- <th>Gender</th> -->
+          <td>Action</td>
+        </tr>
+        <!-- <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>E-mail</th>
+        <th>Gender</th>
+        <th>Action</th>
+      </tr> -->
+
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="modal hidden">
+      <form onsubmit="onFormSubmit()">
+        <div class="element">
+          <lebel class="empId">ID</lebel>
+          <!-- </br> -->
+          <input type="text" name="empId" id="empId" required />
+        </div>
+
+        <div class="element">
+          <lebel class="fullName">Full Name</lebel>
+          <input type="text" name="fullName" id="fullName" required />
+        </div>
+        <div class="element">
+          <lebel class="userName">User Name</lebel>
+          <input type="text" name="fullName" id="userName" required />
+        </div>
+
+        <div class="element">
+          <lebel class="email">E-mail</lebel>
+          <input type="text" name="email" id="email" required />
+        </div>
+        <!-- <div class="gender-box">
+          <p >Gender</p>
+        <div class="gender">
+           <input type="radio" name="gender" id="male" value="male" />
+           <lebel class="male">Male</lebel>
+        </div>
+         <div class="gender">
+           <input type="radio" name="gender" id="female" value="female" />
+          <lebel class="female">Female</lebel>
+        </div>   -->
+
+        <div class="form_action--button">
+          <input class="close-modal" type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
